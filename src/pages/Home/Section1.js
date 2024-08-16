@@ -27,9 +27,9 @@ function Section1(){
               <h1 className="text-white">New Burger</h1>
               <h2 className="text-white">With Onion</h2>
               <p className="text-white pt-2 pb-4">
-                Feugiat primis ligula risus auctor laoreet augue egestas mauris
-                viverra tortor in iaculis pretium at magna mauris ipsum primis
-                rhoncus feugiat
+              Savor our latest burgers, now featuring perfectly sautéed onions and rich caramelized onions. 
+              The combination of savory and sweet adds
+               a delicious depth to every bite. Don't miss out on this flavor-packed upgrade!
               </p>
               <Link className="order_now" to="section3" spy={true} smooth={true} offset={50}duration={50}>
                 Order Now

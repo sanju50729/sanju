@@ -10,17 +10,19 @@ const mockData = [
   {
     image: Pizza,
     title: "Original",
-    paragraph: `Porta semper lacus cursus, feugiat primis ultrice a ligula risus auctor an tempus feugiat dolor lacinia cubilia curae integer orci congue and metus integer primis in integer metus`,
+    paragraph: `Savor the Original Burger! Enjoy our classic burger, crafted with high-quality ingredients for a timeless, mouthwatering experience. Pure, unadulterated deliciousness in every bite!
+
+`,
   },
   {
     image: Salad,
     title: "Qualty Foods",
-    paragraph: `Porta semper lacus cursus, feugiat primis ultrice a ligula risus auctor an tempus feugiat dolor lacinia cubilia curae integer orci congue and metus integer primis in integer metus`,
+    paragraph: `Quality You Can Taste! We use only the finest ingredients to bring you meals that are fresh, flavorful, and crafted with care. Every bite is a testament to our commitment to excellence.`,
   },
   {
     image: Delivery,
     title: "Fastest Delivery",
-    paragraph: `Porta semper lacus cursus, feugiat primis ultrice a ligula risus auctor an tempus feugiat dolor lacinia cubilia curae integer orci congue and metus integer primis in integer metus`,
+    paragraph: `Fastest Delivery Guaranteed! Enjoy your favorite meals delivered hot and fresh to your door in record time. We're dedicated to getting your food to you faster and fresher than ever.`,
   },
   // Add more mock data objects as needed
 ];
@@ -34,9 +36,12 @@ function Section2() {
             <Col lg={{ span: 8, offset: 2 }} className="text-center">
               <h2>The burger tastes better when you eat it with your family</h2>
               <p>
-                Porta semper lacus cursus, feugiat primis ultrice a ligula risus
-                auctor an tempus feugiat dolor lacinia cubilia curae integer
-                orci congue and metus integer primis in integer metus
+              Burgers Taste Better with Family! Enjoy our 
+              delicious burgers with your loved ones for a meal
+               that’s even more satisfying and memorable. Gather around and make 
+               it a burger night to remember!
+
+
               </p>
               <Link to="section3" spy={true} smooth={true} offset={50}duration={50}  className="order_now btn_red">
                 Explore Full Menu

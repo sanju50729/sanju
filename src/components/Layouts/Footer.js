@@ -32,9 +32,8 @@ function Footer() {
             <Col sm={6} lg={3} className="mb-4 mb-lg-0">
               <div className="text-center">
                 <h5>Location</h5>
-                <p>Sirsa 125055</p>
-                <p>Near Softech Infoways, Surkhab Chock</p>
-                <p>Haryana</p>
+                <p>🍔 Tasty Burgurs 🍔</p>
+                <p>Near Softech Infoways,Surkhab Chock, Sirsa</p>
               </div>
             </Col>
             <Col sm={6} lg={3} className="mb-4 mb-lg-0">
@@ -59,7 +58,7 @@ function Footer() {
             <Col sm={6} lg={3} className="mb-4 mb-lg-0">
               <div className="text-center">
                 <h5>Follow Us</h5>
-                <p>Quaerat neque purus ipsum</p>
+                <p>Stay connected for updates and more details</p>
                 <ul className="list-unstyled text-center mt-2">
                   <li>
                     <a href="https://github.com/nimel123">
