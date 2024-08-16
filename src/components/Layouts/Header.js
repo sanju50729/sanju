@@ -3,7 +3,7 @@ import '../../styles/HeaderStyle.css';
 import { Container, Nav, Navbar } from "react-bootstrap";
 
 import Logo from '../../assets/logo/logo.png';
-import { Link, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import { Link } from 'react-scroll';
 function Header(){
   const [nav,SetNav]=useState(false);
 
