@@ -12,9 +12,8 @@ function Section7() {
             <h4>We Guarantee</h4>
             <h2>30 Minutes Delivery!</h2>
             <p>
-              Aliquam a augue suscipit, luctus neque purus ipsum neque undo
-              dolor primis libero tempus, blandit a cursus varius luctus neque
-              magna
+            Craving a burger? Enjoy our delicious burgers delivered to your door in just 30 minutes or less!
+             We’re committed to fast and fresh service. If we’re late, your meal is on us!
             </p>
             <Link to={`tel:${'8222098246'}`} className=" order_now btn_red" >
               Call: 82220-98246

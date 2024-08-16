@@ -33,7 +33,7 @@ function Footer() {
               <div className="text-center">
                 <h5>Location</h5>
                 <p>Sirsa 125055</p>
-                <p>Near Softech Infoways</p>
+                <p>Near Softech Infoways, Surkhab Chock</p>
                 <p>Haryana</p>
               </div>
             </Col>
@@ -48,9 +48,9 @@ function Footer() {
             <Col sm={6} lg={3} className="mb-4 mb-lg-0">
               <div className="text-center">
                 <h5>Order Now</h5>
-                <p>Quaerat neque purus ipsum</p>
+                <p>Contact and Order now and Enjoy</p>
                 <p>
-                  <Link to="tel:9998887777" className="calling">
+                  <Link to="tel:82220-98246" className="calling">
                     82220-98246
                   </Link>
                 </p>
