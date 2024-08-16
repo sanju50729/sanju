@@ -319,6 +319,20 @@
   /* Home Footer 9.0 */
   footer {
     padding-top: 80px;
+    position: relative;
+    width: 100%;
+ 
+    overflow: hidden;
+
+  }
+    .banner{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Cover the entire container */
+      z-index: -1; /* Make sure video is in the background */ 
   }
   footer h5 {
     color: var(--light-black);
