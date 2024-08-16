@@ -49,8 +49,13 @@ function Footer() {
                 <p>Contact and Order now and Enjoy</p>
                 <p>
                   <Link to="tel:82220-98246" className="calling">
-                    82220-98246
+                  <i class="bi bi-telephone-forward">&nbsp; 82220-98246</i>
                   </Link>
+                      </p>
+                      <p>
+                  <Link to={'mailto:rnimel5@gmail.com'} className="calling">
+                  <i class="bi bi-envelope-at">&nbsp; rnimel5@gmail.com</i>
+                 </Link>
                 </p>
               </div>
             </Col>

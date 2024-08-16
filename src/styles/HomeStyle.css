@@ -344,9 +344,9 @@
     font-size: 1rem;
   }
   footer .calling {
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: var(--yellow);
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: var(--light-black);
   }
   footer ul li {
     display: inline-block;
