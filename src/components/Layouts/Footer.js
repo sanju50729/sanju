@@ -33,7 +33,7 @@ function Footer() {
               <div className="text-center">
                 <h5>Location</h5>
                 <p>🍔 Tasty Burgurs 🍔</p>
-                <p>Near Softech Infoways,Surkhab Chock, Sirsa</p>
+                <p>Near Softech Infoways,Surkhab Chowk, Sirsa</p>
               </div>
             </Col>
             <Col sm={6} lg={3} className="mb-4 mb-lg-0">
