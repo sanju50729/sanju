@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import '../../styles/HeaderStyle.css';
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { useLocation } from "react-router-dom";
 
 import Logo from '../../assets/logo/logo.png';
 import { Link } from 'react-scroll';
 function Header(){
   const [nav,SetNav]=useState(false);
+  const [item,SetItem]=useState('0');
 
+  const location = useLocation();
+  const { title } = location.state || {};
   const changeValueoOnScroll = ()=>{
    const ScrollValue=document?.documentElement?.scrollTop;
    ScrollValue >100 ? SetNav(true) : SetNav(false);
@@ -14,6 +18,9 @@ function Header(){
 
   window.addEventListener('scroll', changeValueoOnScroll)
 
+    useEffect(()=>{
+      SetItem(title);
+    },);
     return(
         <>
         <header>
@@ -35,7 +42,10 @@ function Header(){
             <Nav.Link as={Link}  to="contact" spy={true} smooth={true} offset={50}duration={50}>Contact</Nav.Link>
             <Nav.Link as={Link} to='/'>
                <div className="cart">
-               <i class="bi bi-cart2 fs-5"></i>
+               <i class="bi bi-cart2 fs-5 add">
+                
+                {item}
+               </i>
                <em className="roundpoint"></em>
                </div>
             </Nav.Link>

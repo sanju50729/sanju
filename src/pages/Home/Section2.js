@@ -4,6 +4,8 @@ import { Link } from 'react-scroll';
 import Pizza from "../../assets/about/pizza.png";
 import Salad from "../../assets/about/salad.png";
 import Delivery from "../../assets/about/delivery-bike.png";
+import AOS from "aos";
+import { useEffect } from "react";
 
 // Mock Data Cards
 const mockData = [
@@ -28,13 +30,29 @@ const mockData = [
 ];
 
 function Section2() {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 700,
+      easing: 'ease-in-sine',
+      delay: 200,
+      once: false,
+      mirror: true, 
+    });
+  }, []);
+  
   return (
     <>
-      <section className="about_section cursur" id="section2" >
+    
+      <section className="about_section cursur" id="section2" data-aos="fade-right" >
         <Container>
           <Row>
-            <Col lg={{ span: 8, offset: 2 }} className="text-center">
-              <h2>The burger tastes better when you eat it with your family</h2>
+            <Col lg={{ span: 8, offset: 2 }} className="text-center" >
+              <h2  >The burger tastes better when you eat it with your family</h2>
+           
+
+                 
+       
               <p>
               Burgers Taste Better with Family! Enjoy our 
               delicious burgers with your loved ones for a meal
@@ -43,14 +61,17 @@ function Section2() {
 
 
               </p>
-              <Link to="section3" spy={true} smooth={true} offset={50}duration={50}  className="order_now btn_red">
+            
+                <section data-aos="flip-left">
+              <Link to="section3"  spy={true} smooth={true} offset={50}duration={50}  className="order_now btn_red" data-aos="flip-right">
                 Explore Full Menu
               </Link>
+              </section>
             </Col>
           </Row>
         </Container>
       </section>
-      <section className="about_wrapper">
+      <section className="about_wrapper" data-aos='fade-left'>
         <Container>
           <Row className="justify-content-md-center">
             {mockData.map((cardData, index) => (

@@ -10,6 +10,8 @@ import Image7 from "../../assets/menu/burger-17.jpg";
 import Image8 from "../../assets/menu/burger-18.jpg";
 import Cards from "../../components/Cards";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import { useEffect } from "react";
 
 // Mock Data Cards
 const mockData = [
@@ -99,8 +101,18 @@ const renderRatingIcons = (rating) => {
 };
 
 function Section3() {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 700,
+      easing: 'ease-in-sine',
+      delay: 200,
+      once: false,
+      mirror: true, 
+    });
+  }, []);
   return (
-    <section className="menu_section" id="section3">
+    <section className="menu_section" id="section3" data-aos='fade-left'>
       <Container>
         <Row>
           <Col lg={{ span: 8, offset: 2 }} className="text-center mb-5">
@@ -125,7 +137,7 @@ function Section3() {
           ))}
         </Row>
 
-        <Row className="pt-5">
+        <Row className="pt-5" data-aos='fade-left'>
           <Col sm={6} lg={5}>
             <div className="ads_box ads_img1 mb-5 mb-md-0">
               <h4 className="mb-0">GET YOUR FREE</h4>

@@ -69,6 +69,9 @@ header .navbar {
     position: relative;
     top: -0.4375rem;
   }
+  header .add{
+    font-weight: 500px;
+  }
   header .roundpoint {
     width: 16px;
     height: 16px;

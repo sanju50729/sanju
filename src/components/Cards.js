@@ -3,6 +3,7 @@ import { Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 function Cards({ image, rating, title, paragraph, price, renderRatingIcons }) {
+  const name=title;
   return (
     <Col sm={6} lg={4} xl={3} className="mb-4">
       <Card className="overflow-hidden">
@@ -25,7 +26,7 @@ function Cards({ image, rating, title, paragraph, price, renderRatingIcons }) {
               <h5 className="mb-0">${price}</h5>
             </div>
             <div className="add_to_card">
-              <Link to="/">
+              <Link  state={{ title }}>
                 <i class="bi bi-bag me-2"></i>
                 Add To Cart
               </Link>

@@ -1,11 +1,22 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import PromotionImage from "../../assets/promotion/pro.png";
-
+import AOS from "aos";
+import { useEffect } from "react";
 function Section4() {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 700,
+      easing: 'ease-in-sine',
+      delay: 200,
+      once: false,
+      mirror: true, 
+    });
+  }, []);
   return (
     <>
-      <section className="promotion_section" id="blog">
+      <section className="promotion_section" id="blog" data-aos='fade-right'>
         <Container>
           <Row className="align-items-center">
             <Col lg={6} className="text-center mb-5 mb-lg-0">

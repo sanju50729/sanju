@@ -1,8 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+
 
 function Footer() {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 100,
+      once: false,
+      mirror: true, 
+    });
+  }, []);
   // Scroll State
   const [isVisible, setIsVisible] = useState(false);
   const scrollTop = () => {
@@ -25,7 +37,7 @@ function Footer() {
   });
   return (
     <>
-      <footer>
+      <footer data-aos='fade-right'>
         <Container>
           <Row>
             <Col sm={6} lg={3} className="mb-4 mb-lg-0">
@@ -49,12 +61,12 @@ function Footer() {
                 <p>Contact and Order now and Enjoy</p>
                 <p>
                   <Link to="tel:82220-98246" className="calling">
-                  <i class="bi bi-telephone-forward">&nbsp; 82220-98246</i>
+                  <i class="bi bi-telephone-forward">&nbsp; 85699-50729</i>
                   </Link>
                       </p>
                       <p>
                   <Link to={'mailto:rnimel5@gmail.com'} className="calling">
-                  <i class="bi bi-envelope-at">&nbsp; rnimel5@gmail.com</i>
+                  <i class="bi bi-envelope-at">&nbsp; sanju66081@gmail.com</i>
                  </Link>
                 </p>
               </div>
@@ -65,24 +77,9 @@ function Footer() {
                 <p>Stay connected for updates and more details</p>
                 <ul className="list-unstyled text-center mt-2">
                   <li>
-                    <a href="https://github.com/nimel123">
+                    <a href="https://github.com/sanju50729">
                     <i class="bi bi-github"></i>
                     </a>
-                  </li>
-                  <li>
-                  <a href='https://www.linkedin.com/in/ramesh-nimel-a20122218/'>
-                  <i class="bi bi-linkedin"></i>
-                    </a>
-                  </li>
-                  <li>
-                  <a href='https://www.instagram.com/rameshnimel/'>
-                      <i class="bi bi-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.youtube.com/@union_gaming999">
-                      <i class="bi bi-youtube"></i>
-                      </a>
                   </li>
                 </ul>
               </div>

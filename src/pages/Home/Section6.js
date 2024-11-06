@@ -4,10 +4,22 @@ import User1 from "../../assets/blog/review-author-1.jpg";
 import User2 from "../../assets/blog/review-author-2.jpg";
 import User3 from "../../assets/blog/review-author-3.jpg";
 import User4 from "../../assets/blog/review-author-5.jpg";
+import { useEffect } from "react";
+import AOS from "aos";
 
 function Section6() {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 200,
+      once: false,
+      mirror: true, 
+    });
+  }, []);
   return (
-    <section className="blog_section">
+    <section className="blog_section" data-aos='fade-right'>
       <Container>
         <Row>
           <Carousel>

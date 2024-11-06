@@ -5,9 +5,22 @@ import Burger from "../../assets/hero/hero-2.png";
 import { Link } from "react-scroll";
 import '.././../index.css';
 import '../../styles/HomeStyle.css';
+import { useEffect } from "react";
+import AOS from "aos";
+
 function Section1(){
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 700,
+      easing: 'ease-in-sine',
+      delay: 200,
+      once: false,
+      mirror: true, 
+    });
+  }, []);
   return (
-     <section className="hero_section cursur" >
+     <section className="hero_section cursur">
       
       <Container>
         <Row>
@@ -31,9 +44,11 @@ function Section1(){
               The combination of savory and sweet adds
                a delicious depth to every bite. Don't miss out on this flavor-packed upgrade!
               </p>
-              <Link className="order_now" to="section3" spy={true} smooth={true} offset={50}duration={50}>
+              <section data-aos=''>
+              <Link className="order_now" to="section3" spy={true} smooth={true} offset={50}duration={50} >
                 Order Now
               </Link>
+              </section>
             </div>
           </Col>
         </Row>

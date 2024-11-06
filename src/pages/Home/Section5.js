@@ -12,11 +12,23 @@ import Brand5 from "../../assets/brands/brand-15.png";
 import Brand6 from "../../assets/brands/brand-16.png";
 import Brand7 from "../../assets/brands/brand-17.png";
 import Brand8 from "../../assets/brands/brand-18.png";
+import AOS from "aos";
+import { useEffect } from "react";
 
 function Section5() {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 200,
+      once: false,
+      mirror: true, 
+    });
+  }, []);
   return (
     <>
-      <section className="shop_section" id="blog">
+      <section className="shop_section" id="blog" data-aos='fade-left'>
         <Container>
           <Row className="align-items-center">
             <Col lg={6} className="text-center text-lg-start mb-5 mb-lg-0">
